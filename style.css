@@ -1,0 +1,156 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #627404;
+	
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	color: white;
+}
+
+.logo h1{
+	font-family: sans-serif;
+	padding-left: 10px;
+	margin: 0;
+	width: 1000px;
+}
+
+.logo:hover {
+	color: #000000;
+	transition: ease-in-out 0.3s;
+	cursor: pointer;
+}
+
+.nav-menu {
+	display: flex;
+	text-align: center;
+	gap: 35px;
+	padding: 5px;
+}
+
+.nav-menu a {
+	text-decoration: none;
+	color: white;
+	font-family: sans-serif;
+	padding: 7px;
+}
+
+.nav-menu a:hover {
+	color: black;
+	border-radius: 7px;
+	border: #7eb814 solid 2px;
+	background-color: rgb(255, 255, 255);
+	transition: ease-in-out 0.3s;
+}
+
+.product {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem;
+	gap: 3rem;
+  }
+  
+  .hero {
+	flex: 1;
+	color: white;
+	font-family: sans-serif;
+  }
+  
+  .brownies {
+	flex: 1;
+	max-width: 800px;
+	height: auto;
+	border-top-left-radius: 200px;
+	border-bottom-left-radius: 200px;
+	border-top-right-radius: 150px;
+	border-bottom-right-radius: 150px;
+	object-fit: cover;
+  }
+
+  .hero-text p{
+	font-size: 6rem;
+	margin-block-end: 0em;
+  }
+  
+
+.hero-desc p{
+	font-size: 1.5rem;
+	margin-block-start: 0em;
+	border-bottom: 1px solid rgb(224, 208, 208);
+	padding-bottom: 20px;
+	
+}
+
+.hero-engage {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 20px;
+}
+
+.hero-engage p {
+	font-size: 1rem;
+	border: 1px solid rgb(236, 222, 222);
+	border-radius: 25px;
+	padding: 15px;
+	margin-block-start: 0em;
+}
+
+
+
+.hero-engage i {
+	margin: 0 auto;
+	margin-right: 0;
+}
+
+.readnow button {
+	color: white;
+	font-size: 1rem;
+	border: 1px solid rgb(0, 0, 0);
+	background-color: black;
+	border-radius: 25px;
+	padding: 15px;
+	margin-block-start: 0em;
+	font-family: sans-serif;
+}
+
+
+/*responsive with media query*/
+
+@media screen and (max-width: 800px) {
+	.header {
+		flex-direction: column;
+		border-bottom:1px solid #000000;
+	}
+	
+	.product {
+		flex-direction: column;
+	}
+	
+	.hero-text p{
+		font-size: 3rem;
+	}
+	
+	.brownies {
+		max-width: 100%;
+		height: auto;
+		border-radius: 50px;
+	}
+	
+	.hero-desc p{
+		font-size: 1rem;
+	}
+	
+	.hero-engage p {
+		font-size: 0.8rem;
+	}
+	
+	.readnow button {
+		font-size: 0.8rem;
+	}
+}
